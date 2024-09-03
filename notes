@@ -1,0 +1,18 @@
+I have various questions about the code you have me:
+
+1. What does truncation=True mean in the Tokenizer of the train_encoding?
+
+2. What is this code doing? """
+train_dataset = tf.data.Dataset.from_tensor_slices((
+    dict(train_encodings),
+    train_labels
+))
+
+train_dataset = train_dataset.shuffle(len(train_texts)).batch(16)
+"""
+
+3. What is this code doing? """
+test_dataset = tf.data.Dataset.from_tensor_slices((dict(test_encodings)))
+"""
+
+Answer me with examples so that i can understand better.
